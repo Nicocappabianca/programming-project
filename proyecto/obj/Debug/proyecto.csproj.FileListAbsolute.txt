@@ -1,0 +1,26 @@
+C:\Users\Nicolas\Desktop\proyecto\bin\Debug\proyecto.exe.config
+C:\Users\Nicolas\Desktop\proyecto\bin\Debug\proyecto.exe
+C:\Users\Nicolas\Desktop\proyecto\bin\Debug\proyecto.pdb
+C:\Users\Nicolas\Desktop\proyecto\obj\Debug\proyecto.csprojAssemblyReference.cache
+C:\Users\Nicolas\Desktop\proyecto\obj\Debug\proyecto.FormLoad.resources
+C:\Users\Nicolas\Desktop\proyecto\obj\Debug\proyecto.FormMain.resources
+C:\Users\Nicolas\Desktop\proyecto\obj\Debug\proyecto.FormOrderResponse.resources
+C:\Users\Nicolas\Desktop\proyecto\obj\Debug\proyecto.FormRequest.resources
+C:\Users\Nicolas\Desktop\proyecto\obj\Debug\proyecto.Properties.Resources.resources
+C:\Users\Nicolas\Desktop\proyecto\obj\Debug\proyecto.csproj.GenerateResource.cache
+C:\Users\Nicolas\Desktop\proyecto\obj\Debug\proyecto.csproj.CoreCompileInputs.cache
+C:\Users\Nicolas\Desktop\proyecto\obj\Debug\proyecto.exe
+C:\Users\Nicolas\Desktop\proyecto\obj\Debug\proyecto.pdb
+C:\Users\Nicolas\Desktop\UTN\3º Cuatrimestre\Programación III\programming-proyect\proyecto\bin\Debug\proyecto.exe.config
+C:\Users\Nicolas\Desktop\UTN\3º Cuatrimestre\Programación III\programming-proyect\proyecto\bin\Debug\proyecto.exe
+C:\Users\Nicolas\Desktop\UTN\3º Cuatrimestre\Programación III\programming-proyect\proyecto\bin\Debug\proyecto.pdb
+C:\Users\Nicolas\Desktop\UTN\3º Cuatrimestre\Programación III\programming-proyect\proyecto\obj\Debug\proyecto.csprojAssemblyReference.cache
+C:\Users\Nicolas\Desktop\UTN\3º Cuatrimestre\Programación III\programming-proyect\proyecto\obj\Debug\proyecto.FormLoad.resources
+C:\Users\Nicolas\Desktop\UTN\3º Cuatrimestre\Programación III\programming-proyect\proyecto\obj\Debug\proyecto.FormMain.resources
+C:\Users\Nicolas\Desktop\UTN\3º Cuatrimestre\Programación III\programming-proyect\proyecto\obj\Debug\proyecto.FormOrderResponse.resources
+C:\Users\Nicolas\Desktop\UTN\3º Cuatrimestre\Programación III\programming-proyect\proyecto\obj\Debug\proyecto.FormRequest.resources
+C:\Users\Nicolas\Desktop\UTN\3º Cuatrimestre\Programación III\programming-proyect\proyecto\obj\Debug\proyecto.Properties.Resources.resources
+C:\Users\Nicolas\Desktop\UTN\3º Cuatrimestre\Programación III\programming-proyect\proyecto\obj\Debug\proyecto.csproj.GenerateResource.cache
+C:\Users\Nicolas\Desktop\UTN\3º Cuatrimestre\Programación III\programming-proyect\proyecto\obj\Debug\proyecto.csproj.CoreCompileInputs.cache
+C:\Users\Nicolas\Desktop\UTN\3º Cuatrimestre\Programación III\programming-proyect\proyecto\obj\Debug\proyecto.exe
+C:\Users\Nicolas\Desktop\UTN\3º Cuatrimestre\Programación III\programming-proyect\proyecto\obj\Debug\proyecto.pdb
