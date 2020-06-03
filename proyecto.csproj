@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,6 +70,12 @@
     <Compile Include="FormOrderResponse.Designer.cs">
       <DependentUpon>FormOrderResponse.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormOrdersTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOrdersTable.Designer.cs">
+      <DependentUpon>FormOrdersTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormRequest.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,15 +87,26 @@
     <EmbeddedResource Include="FormLoad.resx">
       <DependentUpon>FormLoad.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormOrderResponse.resx">
       <DependentUpon>FormOrderResponse.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormOrdersTable.resx">
+      <DependentUpon>FormOrdersTable.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormRequest.resx">
       <DependentUpon>FormRequest.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\proyecto.FormLoad.resources" />
+    <EmbeddedResource Include="obj\Debug\proyecto.FormMain.resources" />
+    <EmbeddedResource Include="obj\Debug\proyecto.FormOrderResponse.resources" />
+    <EmbeddedResource Include="obj\Debug\proyecto.FormRequest.resources" />
+    <EmbeddedResource Include="obj\Debug\proyecto.Properties.Resources.resources" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -93,6 +116,16 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include=".vs\ProjectSettings.json" />
+    <None Include=".vs\proyecto\v16\.suo" />
+    <None Include=".vs\slnx.sqlite" />
+    <None Include=".vs\VSWorkspaceState.json" />
+    <None Include="bin\Debug\proyecto.exe.config" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\proyecto.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\proyecto.csproj.GenerateResource.cache" />
+    <None Include="obj\Debug\proyecto.csprojAssemblyReference.cache" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -105,6 +138,19 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\proyecto.exe" />
+    <Content Include="bin\Debug\proyecto.pdb" />
+    <Content Include="obj\Debug\proyecto.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\proyecto.exe" />
+    <Content Include="obj\Debug\proyecto.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".vs\programming-proyect\v16\" />
+    <Folder Include="bin\Release\" />
+    <Folder Include="obj\Debug\TempPE\" />
+    <Folder Include="obj\Release\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
