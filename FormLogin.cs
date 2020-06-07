@@ -16,5 +16,26 @@ namespace proyecto
         {
             InitializeComponent();
         }
+
+        private void btnEnter_Click(object sender, EventArgs e)
+        {
+            if (User.login(userName.Text, password.Text))
+            {
+                this.Visible = false;
+                FormMain formMain = new FormMain();
+                formMain.Show();
+            }
+            else
+            {
+                MessageBox.Show("Usuario o contraseña inválido", "Error",
+                                 MessageBoxButtons.OK,
+                                 MessageBoxIcon.Error);
+            }
+        }
+
+        private void FormLogin_Load(object sender, EventArgs e)
+        {
+            this.AcceptButton = btnEnter; 
+        }
     }
 }

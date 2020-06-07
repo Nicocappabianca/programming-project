@@ -57,7 +57,7 @@
             this.password.Name = "password";
             this.password.PasswordChar = '•';
             this.password.Size = new System.Drawing.Size(199, 20);
-            this.password.TabIndex = 0;
+            this.password.TabIndex = 1;
             // 
             // label2
             // 
@@ -76,11 +76,13 @@
             this.btnEnter.TabIndex = 2;
             this.btnEnter.Text = "Ingresar";
             this.btnEnter.UseVisualStyleBackColor = true;
+            this.btnEnter.Click += new System.EventHandler(this.btnEnter_Click);
             // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(228, 194);
             this.Controls.Add(this.btnEnter);
             this.Controls.Add(this.label2);
@@ -88,7 +90,8 @@
             this.Controls.Add(this.password);
             this.Controls.Add(this.userName);
             this.Name = "FormLogin";
-            this.Text = "FormLogin";
+            this.Text = "Inicio de sesión";
+            this.Load += new System.EventHandler(this.FormLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

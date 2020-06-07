@@ -37,7 +37,7 @@
             // 
             // btnLoad
             // 
-            this.btnLoad.Location = new System.Drawing.Point(188, 61);
+            this.btnLoad.Location = new System.Drawing.Point(179, 31);
             this.btnLoad.Name = "btnLoad";
             this.btnLoad.Size = new System.Drawing.Size(142, 39);
             this.btnLoad.TabIndex = 0;
@@ -46,7 +46,7 @@
             // 
             // btnRequest
             // 
-            this.btnRequest.Location = new System.Drawing.Point(18, 61);
+            this.btnRequest.Location = new System.Drawing.Point(23, 31);
             this.btnRequest.Name = "btnRequest";
             this.btnRequest.Size = new System.Drawing.Size(150, 39);
             this.btnRequest.TabIndex = 1;
@@ -55,12 +55,13 @@
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(113, 120);
+            this.btnLogin.Location = new System.Drawing.Point(116, 87);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(124, 21);
             this.btnLogin.TabIndex = 2;
             this.btnLogin.Text = "Iniciar sesion";
             this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // lblUser
             // 
@@ -74,25 +75,26 @@
             // 
             // btnLogout
             // 
-            this.btnLogout.Location = new System.Drawing.Point(113, 135);
+            this.btnLogout.Location = new System.Drawing.Point(116, 87);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(124, 21);
             this.btnLogout.TabIndex = 2;
             this.btnLogout.Text = "Cerrar sesion";
             this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Visible = false;
             // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(345, 170);
+            this.ClientSize = new System.Drawing.Size(336, 122);
             this.Controls.Add(this.lblUser);
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.btnRequest);
             this.Controls.Add(this.btnLoad);
             this.Name = "FormMain";
-            this.Text = "Form1";
+            this.Load += new System.EventHandler(this.FormMain_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
