@@ -27,7 +27,7 @@ namespace proyecto
             }
             else
             {
-                MessageBox.Show("Usuario o contraseña inválido", "Error",
+                MessageBox.Show("Usuario o contraseña inválido.", "Error",
                                  MessageBoxButtons.OK,
                                  MessageBoxIcon.Error);
             }
