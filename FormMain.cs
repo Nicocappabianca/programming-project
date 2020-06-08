@@ -7,7 +7,7 @@ namespace proyecto
         public FormMain()
         {
             InitializeComponent();
-            if (User.loged)
+            if (User.isLogged())
             {
                 btnLogin.Visible = false;
                 btnLogout.Visible = true; 

@@ -10,7 +10,7 @@ namespace proyecto
     {
         public static string username = "admin";
         public static string password = "password";
-        public static bool loged = false; 
+        private static bool logged = false; 
 
         public static bool login(string _userName, string _password)
         {
@@ -18,9 +18,18 @@ namespace proyecto
             {
                 if (_userName == username && _password == password)
                 {
-                    loged = true; 
+                    logged = true; 
                     return true; 
                 }
+            }
+            return false; 
+        }
+
+        public static bool isLogged()
+        {
+            if(logged)
+            {
+                return true; 
             }
             return false; 
         }
