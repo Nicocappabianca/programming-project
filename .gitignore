@@ -1,4 +1,3 @@
-.vs/VSWorkspaceState.json
-.vs/programming-proyect/v16/.suo
-.vs/proyecto/v16/.suo
-.vs/slnx.sqlite
+.vs/
+bin/
+obj/
