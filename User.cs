@@ -12,7 +12,7 @@ namespace proyecto
         public static string password = "password";
         private static bool logged = false; 
 
-        public static bool login(string _userName, string _password)
+        public static bool login (string _userName, string _password)
         {
             if(_userName != "" && _password != "")
             {
@@ -33,6 +33,17 @@ namespace proyecto
             }
             return false; 
         }
+
+        public static void logout ()
+        {
+            logged = false;
+        }
          
+        public static string estado ()
+        {
+            if (logged)
+                return username;
+            return "";
+        }
     }
 }

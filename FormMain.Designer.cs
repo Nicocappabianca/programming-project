@@ -71,7 +71,7 @@
             this.lblUser.Size = new System.Drawing.Size(55, 13);
             this.lblUser.TabIndex = 3;
             this.lblUser.Text = "Username";
-            this.lblUser.Visible = false;
+            this.lblUser.Click += new System.EventHandler(this.FormMain_Load);
             // 
             // btnLogout
             // 
@@ -82,6 +82,7 @@
             this.btnLogout.Text = "Cerrar sesion";
             this.btnLogout.UseVisualStyleBackColor = true;
             this.btnLogout.Visible = false;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // FormMain
             // 
@@ -105,8 +106,8 @@
         private System.Windows.Forms.Button btnLoad;
         private System.Windows.Forms.Button btnRequest;
         private System.Windows.Forms.Button btnLogin;
-        private System.Windows.Forms.Label lblUser;
         private System.Windows.Forms.Button btnLogout;
+        public System.Windows.Forms.Label lblUser;
     }
 }
 

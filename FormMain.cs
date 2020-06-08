@@ -9,6 +9,7 @@ namespace proyecto
             InitializeComponent();
             if (User.isLogged())
             {
+                lblUser.Visible = true;
                 btnLogin.Visible = false;
                 btnLogout.Visible = true; 
             }
@@ -24,6 +25,19 @@ namespace proyecto
         private void FormMain_Load(object sender, System.EventArgs e)
         {
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            lblUser.Text = User.estado();
+        }
+
+        private void btnLogout_Click(object sender, System.EventArgs e)
+        {
+            User.logout();
+            lblUser.Visible = false;
+            btnLogout.Visible = false;
+            btnLogin.Visible = true;
         }
     }
 }
+
+
+
+
