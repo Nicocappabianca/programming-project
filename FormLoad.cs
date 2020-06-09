@@ -16,5 +16,10 @@ namespace proyecto
         {
             InitializeComponent();
         }
+
+        private void FormLoad_Load(object sender, EventArgs e)
+        {
+            orderId.Text = (OrdersRepository.listCount() + 1).ToString();  
+        }
     }
 }
