@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace proyecto
 {
-    class Order
+    public class Order
     {
         public int id;
         public string date;
