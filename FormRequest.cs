@@ -17,9 +17,20 @@ namespace proyecto
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void btnOrderRequest_Click(object sender, EventArgs e)
         {
-
+            if(inputId.Text != "")
+            {
+                var id = int.Parse(inputId.Text); 
+                Order soughtOrder = OrdersRepository.getOrderById(id);
+                
+                if(soughtOrder != null)
+                {
+                    this.Visible = false;
+                    FormOrderResponse formOrder = new FormOrderResponse(soughtOrder);
+                    formOrder.Show();
+                }
+            }
         }
     }
 }

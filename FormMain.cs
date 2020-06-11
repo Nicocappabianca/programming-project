@@ -42,6 +42,13 @@ namespace proyecto
             FormLoad formLoad = new FormLoad();
             formLoad.Show();
         }
+
+        private void btnRequest_Click(object sender, System.EventArgs e)
+        {
+            this.Visible = false;
+            FormRequest formRequest = new FormRequest();
+            formRequest.Show();
+        }
     }
 }
 

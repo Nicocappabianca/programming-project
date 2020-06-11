@@ -40,7 +40,8 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.status = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -139,6 +140,7 @@
             this.btnSave.TabIndex = 10;
             this.btnSave.Text = "Guardar cambios";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Visible = false;
             // 
             // btnBack
             // 
@@ -148,26 +150,37 @@
             this.btnBack.TabIndex = 10;
             this.btnBack.Text = "Volver al inicio";
             this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Visible = false;
             // 
-            // comboBox1
+            // status
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(32, 319);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(188, 21);
-            this.comboBox1.TabIndex = 11;
+            this.status.Location = new System.Drawing.Point(33, 323);
+            this.status.Name = "status";
+            this.status.ReadOnly = true;
+            this.status.Size = new System.Drawing.Size(187, 20);
+            this.status.TabIndex = 5;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(183, 550);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(127, 40);
+            this.button1.TabIndex = 10;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Visible = false;
             // 
             // FormOrderResponse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(357, 433);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.description);
+            this.Controls.Add(this.status);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.productType);
             this.Controls.Add(this.label3);
@@ -177,6 +190,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FormOrderResponse";
             this.Text = "FormOrderResponse";
+            this.Load += new System.EventHandler(this.FormOrderResponse_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -196,6 +210,7 @@
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnBack;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox status;
+        private System.Windows.Forms.Button button1;
     }
 }

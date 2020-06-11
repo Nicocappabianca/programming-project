@@ -14,9 +14,18 @@ namespace proyecto
     {
         public FormOrderResponse()
         {
-            InitializeComponent();
+            InitializeComponent(); 
         }
 
+        public FormOrderResponse(Order order)
+        {
+            InitializeComponent();
+            orderId.Text = (order.id).ToString();
+            entryDate.Text = (order.date).ToString();
+            productType.Text = (order.product).ToString();
+            description.Text = (order.description).ToString();
+            status.Text = (order.status).ToString(); 
+        }
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -25,6 +34,11 @@ namespace proyecto
         private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void FormOrderResponse_Load(object sender, EventArgs e)
+        {
+             
         }
     }
 }

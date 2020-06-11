@@ -53,6 +53,7 @@
             this.btnRequest.TabIndex = 1;
             this.btnRequest.Text = "Consulta de pedido";
             this.btnRequest.UseVisualStyleBackColor = true;
+            this.btnRequest.Click += new System.EventHandler(this.btnRequest_Click);
             // 
             // btnLogin
             // 
