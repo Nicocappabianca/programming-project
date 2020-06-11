@@ -35,6 +35,13 @@ namespace proyecto
             btnLogout.Visible = false;
             btnLogin.Visible = true;
         }
+
+        private void btnLoad_Click(object sender, System.EventArgs e)
+        {
+            this.Visible = false;
+            FormLoad formLoad = new FormLoad();
+            formLoad.Show();
+        }
     }
 }
 

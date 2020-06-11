@@ -111,12 +111,6 @@
             // productType
             // 
             this.productType.FormattingEnabled = true;
-            this.productType.Items.AddRange(new object[] {
-            "Computadora",
-            "Notebook",
-            "Tablet",
-            "Celular",
-            "Programacion III"});
             this.productType.Location = new System.Drawing.Point(12, 106);
             this.productType.Name = "productType";
             this.productType.Size = new System.Drawing.Size(161, 21);

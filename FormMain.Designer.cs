@@ -43,6 +43,7 @@
             this.btnLoad.TabIndex = 0;
             this.btnLoad.Text = "Carga de pedido";
             this.btnLoad.UseVisualStyleBackColor = true;
+            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
             // 
             // btnRequest
             // 
