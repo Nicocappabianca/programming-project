@@ -31,5 +31,18 @@ namespace proyecto
             }
             productType.SelectedIndex = 0; 
         }
+
+        private void btnSend_Click(object sender, EventArgs e)
+        {
+            if(description.Text.Length > 1)
+            {
+                var id = int.Parse(orderId.Text);
+                OrdersRepository.addOrder(id, entryDate.Text, productType.Text, description.Text);
+
+                this.Visible = false;
+                FormMain formMain = new FormMain();
+                formMain.Show();
+            }
+        }
     }
 }
