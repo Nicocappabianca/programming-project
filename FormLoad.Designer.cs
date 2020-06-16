@@ -132,6 +132,7 @@
             this.Controls.Add(this.orderId);
             this.Controls.Add(this.label1);
             this.Name = "FormLoad";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormLoad";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormLoad_FormClosed);
             this.Load += new System.EventHandler(this.FormLoad_Load);

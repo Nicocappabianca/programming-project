@@ -189,6 +189,7 @@
             this.Controls.Add(this.orderId);
             this.Controls.Add(this.label1);
             this.Name = "FormOrderResponse";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormOrderResponse";
             this.Load += new System.EventHandler(this.FormOrderResponse_Load);
             this.ResumeLayout(false);

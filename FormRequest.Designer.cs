@@ -80,6 +80,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.inputId);
             this.Name = "FormRequest";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormConsulta";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormRequest_FormClosed);
             this.ResumeLayout(false);

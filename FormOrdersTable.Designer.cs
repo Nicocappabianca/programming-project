@@ -112,6 +112,7 @@
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.dataGridView1);
             this.Name = "FormOrdersTable";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormOrdersTable";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
