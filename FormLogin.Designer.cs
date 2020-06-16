@@ -70,7 +70,7 @@
             // 
             // btnEnter
             // 
-            this.btnEnter.Location = new System.Drawing.Point(50, 135);
+            this.btnEnter.Location = new System.Drawing.Point(50, 131);
             this.btnEnter.Name = "btnEnter";
             this.btnEnter.Size = new System.Drawing.Size(125, 32);
             this.btnEnter.TabIndex = 2;
@@ -83,14 +83,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(228, 194);
+            this.ClientSize = new System.Drawing.Size(228, 185);
             this.Controls.Add(this.btnEnter);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.password);
             this.Controls.Add(this.userName);
             this.Name = "FormLogin";
-            this.Text = "Inicio de sesión";
+            this.Text = "Login";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormLogin_FormClosed);
             this.Load += new System.EventHandler(this.FormLogin_Load);
             this.ResumeLayout(false);

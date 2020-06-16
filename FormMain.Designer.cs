@@ -97,6 +97,7 @@
             this.Controls.Add(this.btnRequest);
             this.Controls.Add(this.btnLoad);
             this.Name = "FormMain";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormMain_FormClosing);
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
