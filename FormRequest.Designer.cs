@@ -52,17 +52,17 @@
             // 
             // btnAllOrders
             // 
-            this.btnAllOrders.Location = new System.Drawing.Point(134, 73);
+            this.btnAllOrders.Location = new System.Drawing.Point(134, 57);
             this.btnAllOrders.Name = "btnAllOrders";
             this.btnAllOrders.Size = new System.Drawing.Size(127, 34);
             this.btnAllOrders.TabIndex = 2;
             this.btnAllOrders.Text = "Ver todos";
             this.btnAllOrders.UseVisualStyleBackColor = true;
-            this.btnAllOrders.Visible = false;
+            this.btnAllOrders.Click += new System.EventHandler(this.btnAllOrders_Click);
             // 
             // btnOrderRequest
             // 
-            this.btnOrderRequest.Location = new System.Drawing.Point(77, 73);
+            this.btnOrderRequest.Location = new System.Drawing.Point(12, 73);
             this.btnOrderRequest.Name = "btnOrderRequest";
             this.btnOrderRequest.Size = new System.Drawing.Size(127, 34);
             this.btnOrderRequest.TabIndex = 2;
