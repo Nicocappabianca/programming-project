@@ -91,6 +91,7 @@
             this.Controls.Add(this.userName);
             this.Name = "FormLogin";
             this.Text = "Inicio de sesión";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormLogin_FormClosed);
             this.Load += new System.EventHandler(this.FormLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

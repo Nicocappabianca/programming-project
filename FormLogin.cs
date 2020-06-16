@@ -38,5 +38,12 @@ namespace proyecto
         {
             this.AcceptButton = btnEnter; 
         }
+
+        private void FormLogin_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Visible = false;
+            FormMain formMain = new FormMain();
+            formMain.Show();
+        }
     }
 }
