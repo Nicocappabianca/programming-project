@@ -41,7 +41,7 @@
             // 
             // btnSend
             // 
-            this.btnSend.Location = new System.Drawing.Point(61, 290);
+            this.btnSend.Location = new System.Drawing.Point(54, 279);
             this.btnSend.Name = "btnSend";
             this.btnSend.Size = new System.Drawing.Size(217, 40);
             this.btnSend.TabIndex = 21;
@@ -114,7 +114,7 @@
             this.productType.FormattingEnabled = true;
             this.productType.Location = new System.Drawing.Point(12, 106);
             this.productType.Name = "productType";
-            this.productType.Size = new System.Drawing.Size(161, 21);
+            this.productType.Size = new System.Drawing.Size(288, 21);
             this.productType.TabIndex = 22;
             // 
             // FormLoad
@@ -133,6 +133,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FormLoad";
             this.Text = "FormLoad";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormLoad_FormClosed);
             this.Load += new System.EventHandler(this.FormLoad_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

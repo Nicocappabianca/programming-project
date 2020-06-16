@@ -52,9 +52,9 @@
             // 
             // btnAllOrders
             // 
-            this.btnAllOrders.Location = new System.Drawing.Point(77, 113);
+            this.btnAllOrders.Location = new System.Drawing.Point(134, 73);
             this.btnAllOrders.Name = "btnAllOrders";
-            this.btnAllOrders.Size = new System.Drawing.Size(127, 23);
+            this.btnAllOrders.Size = new System.Drawing.Size(127, 34);
             this.btnAllOrders.TabIndex = 2;
             this.btnAllOrders.Text = "Ver todos";
             this.btnAllOrders.UseVisualStyleBackColor = true;
@@ -74,13 +74,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(273, 148);
+            this.ClientSize = new System.Drawing.Size(273, 123);
             this.Controls.Add(this.btnAllOrders);
             this.Controls.Add(this.btnOrderRequest);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.inputId);
             this.Name = "FormRequest";
             this.Text = "FormConsulta";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormRequest_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 

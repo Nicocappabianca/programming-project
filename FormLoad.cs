@@ -44,5 +44,11 @@ namespace proyecto
                 formMain.Show();
             }
         }
+
+        private void FormLoad_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            FormMain formMain = new FormMain();
+            formMain.Show();
+        }
     }
 }

@@ -32,5 +32,11 @@ namespace proyecto
                 }
             }
         }
+
+        private void FormRequest_FormClosed(object sender, FormClosedEventArgs e)
+        {
+                FormMain formMain = new FormMain();
+                formMain.Show();
+        }
     }
 }
