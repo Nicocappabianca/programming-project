@@ -40,5 +40,18 @@ namespace proyecto
         {
              
         }
+
+        private void FormOrderResponse_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            FormMain formMain = new FormMain();
+            formMain.Show();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            FormMain formMain = new FormMain();
+            formMain.Show();
+        }
     }
 }

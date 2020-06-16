@@ -41,7 +41,7 @@
             // 
             // btnSend
             // 
-            this.btnSend.Location = new System.Drawing.Point(54, 279);
+            this.btnSend.Location = new System.Drawing.Point(54, 259);
             this.btnSend.Name = "btnSend";
             this.btnSend.Size = new System.Drawing.Size(217, 40);
             this.btnSend.TabIndex = 21;
@@ -51,7 +51,7 @@
             // 
             // description
             // 
-            this.description.Location = new System.Drawing.Point(12, 159);
+            this.description.Location = new System.Drawing.Point(12, 139);
             this.description.Multiline = true;
             this.description.Name = "description";
             this.description.Size = new System.Drawing.Size(288, 102);
@@ -60,7 +60,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 143);
+            this.label4.Location = new System.Drawing.Point(12, 123);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(124, 13);
             this.label4.TabIndex = 17;
@@ -69,7 +69,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 90);
+            this.label3.Location = new System.Drawing.Point(12, 70);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(88, 13);
             this.label3.TabIndex = 15;
@@ -112,7 +112,7 @@
             // productType
             // 
             this.productType.FormattingEnabled = true;
-            this.productType.Location = new System.Drawing.Point(12, 106);
+            this.productType.Location = new System.Drawing.Point(12, 86);
             this.productType.Name = "productType";
             this.productType.Size = new System.Drawing.Size(288, 21);
             this.productType.TabIndex = 22;
@@ -121,7 +121,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(323, 342);
+            this.ClientSize = new System.Drawing.Size(323, 324);
             this.Controls.Add(this.productType);
             this.Controls.Add(this.btnSend);
             this.Controls.Add(this.description);

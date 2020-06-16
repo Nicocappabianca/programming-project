@@ -19,7 +19,11 @@ namespace proyecto
 
         private void btnOrderRequest_Click(object sender, EventArgs e)
         {
-            if(inputId.Text != "")
+
+            int a = 0;
+            int.TryParse((inputId.Text),out a);
+      
+            if ((inputId.Text != "") && (a>0) )
             {
                 var id = int.Parse(inputId.Text); 
                 Order soughtOrder = OrdersRepository.getOrderById(id);

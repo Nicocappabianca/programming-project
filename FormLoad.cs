@@ -42,6 +42,8 @@ namespace proyecto
                 this.Visible = false;
                 FormMain formMain = new FormMain();
                 formMain.Show();
+
+                //aca se podria devolver un confirm, ¿trycatch dentro de addOrder ?  o una comprobacion en los imputs.
             }
         }
 

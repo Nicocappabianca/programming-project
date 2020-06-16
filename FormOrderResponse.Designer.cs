@@ -131,6 +131,7 @@
             this.btnExit.TabIndex = 10;
             this.btnExit.Text = "Volver al inicio";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnSave
             // 
@@ -191,6 +192,7 @@
             this.Name = "FormOrderResponse";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormOrderResponse";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormOrderResponse_FormClosed);
             this.Load += new System.EventHandler(this.FormOrderResponse_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
