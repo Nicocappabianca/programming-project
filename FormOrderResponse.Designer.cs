@@ -125,7 +125,7 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(78, 371);
+            this.btnExit.Location = new System.Drawing.Point(73, 371);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(194, 40);
             this.btnExit.TabIndex = 10;
@@ -192,7 +192,7 @@
             this.Name = "FormOrderResponse";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormOrderResponse";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormOrderResponse_FormClosed);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormOrderResponse_FormClosed_1);
             this.Load += new System.EventHandler(this.FormOrderResponse_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

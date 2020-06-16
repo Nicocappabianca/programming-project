@@ -41,13 +41,25 @@ namespace proyecto
              
         }
 
-        private void FormOrderResponse_FormClosed(object sender, FormClosedEventArgs e)
+        private void btnExit_Click(object sender, EventArgs e)
         {
+            this.Visible = false;
             FormMain formMain = new FormMain();
             formMain.Show();
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            if (keyData == Keys.Escape)
+            {
+                this.Visible = false;
+                FormRequest formReq = new FormRequest();
+                formReq.Show();
+            }
+            return base.ProcessCmdKey(ref msg, keyData);
+        }
+
+        private void FormOrderResponse_FormClosed_1(object sender, FormClosedEventArgs e)
         {
             this.Visible = false;
             FormMain formMain = new FormMain();

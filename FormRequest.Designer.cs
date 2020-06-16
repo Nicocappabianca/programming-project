@@ -83,6 +83,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormConsulta";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormRequest_FormClosed);
+            this.Load += new System.EventHandler(this.FormRequest_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

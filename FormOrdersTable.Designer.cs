@@ -114,6 +114,7 @@
             this.Name = "FormOrdersTable";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormOrdersTable";
+            this.Load += new System.EventHandler(this.FormOrdersTable_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
