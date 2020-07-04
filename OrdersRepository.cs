@@ -7,17 +7,18 @@ using System.Threading.Tasks;
 
 namespace proyecto
 {
-    public static class OrdersRepository
+    [Serializable]
+    public class OrdersRepository
     {
-        static List<Order> ordersList = new List<Order>();
+        public List<Order> ordersList = new List<Order>();
         
-        public static void addOrder(int id, string date, string product, string description)
+        public void addOrder(int id, string date, string product, string description)
         {
             Order newOrder = new Order(id, date, product, description); 
             ordersList.Add(newOrder); 
         }
 
-        public static Order getOrderById(int id)
+        public Order getOrderById(int id)
         {
             foreach(Order _order in ordersList)
             {
@@ -30,7 +31,7 @@ namespace proyecto
             return null; 
         }
 
-        public static int listCount()
+        public int listCount()
         {
             return ordersList.Count(); 
         }

@@ -36,7 +36,7 @@
             // 
             // inputId
             // 
-            this.inputId.Location = new System.Drawing.Point(77, 31);
+            this.inputId.Location = new System.Drawing.Point(79, 30);
             this.inputId.Name = "inputId";
             this.inputId.Size = new System.Drawing.Size(127, 20);
             this.inputId.TabIndex = 0;
@@ -44,7 +44,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(74, 15);
+            this.label1.Location = new System.Drawing.Point(76, 14);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(53, 13);
             this.label1.TabIndex = 1;
@@ -52,7 +52,7 @@
             // 
             // btnAllOrders
             // 
-            this.btnAllOrders.Location = new System.Drawing.Point(134, 57);
+            this.btnAllOrders.Location = new System.Drawing.Point(145, 73);
             this.btnAllOrders.Name = "btnAllOrders";
             this.btnAllOrders.Size = new System.Drawing.Size(127, 34);
             this.btnAllOrders.TabIndex = 2;
@@ -74,7 +74,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(273, 123);
+            this.ClientSize = new System.Drawing.Size(283, 123);
             this.Controls.Add(this.btnAllOrders);
             this.Controls.Add(this.btnOrderRequest);
             this.Controls.Add(this.label1);

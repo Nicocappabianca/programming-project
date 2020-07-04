@@ -22,7 +22,7 @@ namespace proyecto
         {
             var products = new List<string>() { "Celular", "Televisor", "Computadora", "Tablet", "Monitor" };
             
-            orderId.Text = (OrdersRepository.listCount() + 1).ToString();
+            orderId.Text = (Program.getApp().listCount() + 1).ToString();
             entryDate.Text = (DateTime.Now).ToString("dd/MM/yyyy");
    
             foreach (string product in products)
@@ -37,9 +37,9 @@ namespace proyecto
             if(description.Text.Length > 1)
             {
                 var id = int.Parse(orderId.Text);
-                OrdersRepository.addOrder(id, entryDate.Text, productType.Text, description.Text);
+                Program.getApp().addOrder(id, entryDate.Text, productType.Text, description.Text);
 
-                this.Visible = false;
+                this.Visible = false;        
                 FormMain formMain = new FormMain();
                 formMain.Show();
 

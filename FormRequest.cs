@@ -26,7 +26,7 @@ namespace proyecto
             if ((inputId.Text != "") && (a>0) )
             {
                 var id = int.Parse(inputId.Text); 
-                Order soughtOrder = OrdersRepository.getOrderById(id);
+                Order soughtOrder = Program.getApp().getOrderById(id);
                 
                 if(soughtOrder != null)
                 {
@@ -62,7 +62,6 @@ namespace proyecto
         {
             FormOrdersTable tabla = new FormOrdersTable();
             tabla.Show();
-
         }
     }
 }

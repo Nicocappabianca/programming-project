@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace proyecto
 {
+    [Serializable]
     public class Order
     {
         public int id;
@@ -25,7 +26,7 @@ namespace proyecto
 
         public void updateOrder(string status, int id)
         {
-            Order _order = OrdersRepository.getOrderById(id);
+            Order _order = Program.getApp().getOrderById(id);
             _order.status = status; 
         }
     }

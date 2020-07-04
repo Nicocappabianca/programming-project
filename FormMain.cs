@@ -52,13 +52,7 @@ namespace proyecto
 
         private void FormMain_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (MessageBox.Show("Desea cerrar la mejor aplicacion de esta pandemia?", "CoronaSupport20", 
-                       MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.No)
-                    {
-                        e.Cancel = true;
-                    }
-
-            //sarasa
+            Application.Exit(); 
         }
     }
 }

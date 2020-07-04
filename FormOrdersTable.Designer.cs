@@ -29,13 +29,12 @@
         private void InitializeComponent()
         {
             this.dataGrid = new System.Windows.Forms.DataGridView();
-            this.btnExit = new System.Windows.Forms.Button();
-            this.btnExport = new System.Windows.Forms.Button();
             this.orderId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.prodType = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.status = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.description = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnExit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGrid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,24 +51,6 @@
             this.dataGrid.Name = "dataGrid";
             this.dataGrid.Size = new System.Drawing.Size(776, 248);
             this.dataGrid.TabIndex = 0;
-            // 
-            // btnExit
-            // 
-            this.btnExit.Location = new System.Drawing.Point(210, 266);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(177, 36);
-            this.btnExit.TabIndex = 1;
-            this.btnExit.Text = "Volver al inicio";
-            this.btnExit.UseVisualStyleBackColor = true;
-            // 
-            // btnExport
-            // 
-            this.btnExport.Location = new System.Drawing.Point(412, 266);
-            this.btnExport.Name = "btnExport";
-            this.btnExport.Size = new System.Drawing.Size(177, 36);
-            this.btnExport.TabIndex = 1;
-            this.btnExport.Text = "Exportar a Excel";
-            this.btnExport.UseVisualStyleBackColor = true;
             // 
             // orderId
             // 
@@ -104,12 +85,20 @@
             this.description.Name = "description";
             this.description.ReadOnly = true;
             // 
+            // btnExit
+            // 
+            this.btnExit.Location = new System.Drawing.Point(316, 266);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(177, 36);
+            this.btnExit.TabIndex = 1;
+            this.btnExit.Text = "Volver al inicio";
+            this.btnExit.UseVisualStyleBackColor = true;
+            // 
             // FormOrdersTable
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 310);
-            this.Controls.Add(this.btnExport);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.dataGrid);
             this.Name = "FormOrdersTable";
@@ -125,7 +114,6 @@
 
         private System.Windows.Forms.DataGridView dataGrid;
         private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.Button btnExport;
         private System.Windows.Forms.DataGridViewTextBoxColumn orderId;
         private System.Windows.Forms.DataGridViewTextBoxColumn date;
         private System.Windows.Forms.DataGridViewTextBoxColumn prodType;

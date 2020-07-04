@@ -20,9 +20,9 @@ namespace proyecto
         private void FormOrdersTable_Load(object sender, EventArgs e)
         {
             // Carga los elementos de cada Order en una fila del dataGrid.
-            for (int i = 1; i <= OrdersRepository.listCount(); i++)
+            for (int i = 1; i <= Program.getApp().listCount(); i++)
             {
-                Order orderTemp = OrdersRepository.getOrderById(i);
+                Order orderTemp = Program.getApp().getOrderById(i);
 
                 string[] arr = new string[] { orderTemp.id.ToString(), orderTemp.date, orderTemp.product, orderTemp.status, orderTemp.description };
 
