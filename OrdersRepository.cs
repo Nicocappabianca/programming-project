@@ -35,5 +35,11 @@ namespace proyecto
         {
             return ordersList.Count(); 
         }
+
+        public void updateOrder(string status, int id)
+        {
+            Order _order = Program.getApp().getOrderById(id);
+            _order.status = status;
+        }
     }
 }

@@ -45,7 +45,8 @@ namespace proyecto
 
         private void FormRequest_Load(object sender, EventArgs e)
         {
-
+            if (User.isLogged())
+                btnAllOrders.Visible = true;
         }
 
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
@@ -60,6 +61,7 @@ namespace proyecto
 
         private void btnAllOrders_Click(object sender, EventArgs e)
         {
+            this.Visible = false;
             FormOrdersTable tabla = new FormOrdersTable();
             tabla.Show();
         }

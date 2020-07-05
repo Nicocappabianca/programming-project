@@ -70,9 +70,9 @@
             // 
             // btnEnter
             // 
-            this.btnEnter.Location = new System.Drawing.Point(50, 131);
+            this.btnEnter.Location = new System.Drawing.Point(54, 132);
             this.btnEnter.Name = "btnEnter";
-            this.btnEnter.Size = new System.Drawing.Size(125, 32);
+            this.btnEnter.Size = new System.Drawing.Size(125, 27);
             this.btnEnter.TabIndex = 2;
             this.btnEnter.Text = "Ingresar";
             this.btnEnter.UseVisualStyleBackColor = true;
@@ -83,7 +83,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(228, 185);
+            this.ClientSize = new System.Drawing.Size(228, 171);
             this.Controls.Add(this.btnEnter);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);

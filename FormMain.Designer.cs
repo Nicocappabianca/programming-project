@@ -40,7 +40,7 @@
             this.btnLoad.Location = new System.Drawing.Point(178, 22);
             this.btnLoad.Name = "btnLoad";
             this.btnLoad.Size = new System.Drawing.Size(142, 39);
-            this.btnLoad.TabIndex = 0;
+            this.btnLoad.TabIndex = 1;
             this.btnLoad.Text = "Carga de pedido";
             this.btnLoad.UseVisualStyleBackColor = true;
             this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
@@ -50,7 +50,7 @@
             this.btnRequest.Location = new System.Drawing.Point(22, 22);
             this.btnRequest.Name = "btnRequest";
             this.btnRequest.Size = new System.Drawing.Size(150, 39);
-            this.btnRequest.TabIndex = 1;
+            this.btnRequest.TabIndex = 0;
             this.btnRequest.Text = "Consulta de pedido";
             this.btnRequest.UseVisualStyleBackColor = true;
             this.btnRequest.Click += new System.EventHandler(this.btnRequest_Click);

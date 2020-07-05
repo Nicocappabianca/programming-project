@@ -26,20 +26,7 @@ namespace proyecto
             description.Text = (order.description).ToString();
             status.Text = (order.status).ToString(); 
         }
-        private void label1_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void richTextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FormOrderResponse_Load(object sender, EventArgs e)
-        {
-             
-        }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
@@ -64,6 +51,23 @@ namespace proyecto
             this.Visible = false;
             FormMain formMain = new FormMain();
             formMain.Show();
+        }
+
+        private void FormOrderResponse_Load(object sender, EventArgs e)
+        {
+            if (User.isLogged())
+            {
+                btnBack.Visible = true;
+                btnSave.Visible = true;
+                btnExit.Visible = false;
+                status.Enabled = true;
+            }
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            Program.getApp().updateOrder(status.Text, Int32.Parse(orderId.Text));
+            MessageBox.Show(string.Format("Se modifico el estado. \nPedido #{0} a {1}", orderId.Text, status.Text), "Cambio de estado", MessageBoxButtons.OK,MessageBoxIcon.Information);
         }
     }
 }

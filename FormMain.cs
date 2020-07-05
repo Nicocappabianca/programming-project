@@ -25,7 +25,7 @@ namespace proyecto
         private void FormMain_Load(object sender, System.EventArgs e)
         {
             FormBorderStyle = FormBorderStyle.FixedSingle;
-            lblUser.Text = User.estado();
+            lblUser.Text = User.getUser();
         }
 
         private void btnLogout_Click(object sender, System.EventArgs e)
@@ -52,10 +52,20 @@ namespace proyecto
 
         private void FormMain_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit(); 
+            if (MessageBox.Show("Desea salir de la aplicacion?", "CoronaManagement 2020",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+            else
+            {
+                Application.ExitThread();
+            }
         }
     }
 }
+
+
 
 
 

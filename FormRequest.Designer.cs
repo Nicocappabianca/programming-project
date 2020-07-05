@@ -36,15 +36,15 @@
             // 
             // inputId
             // 
-            this.inputId.Location = new System.Drawing.Point(79, 30);
+            this.inputId.Location = new System.Drawing.Point(18, 28);
             this.inputId.Name = "inputId";
-            this.inputId.Size = new System.Drawing.Size(127, 20);
+            this.inputId.Size = new System.Drawing.Size(162, 20);
             this.inputId.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(76, 14);
+            this.label1.Location = new System.Drawing.Point(18, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(53, 13);
             this.label1.TabIndex = 1;
@@ -52,20 +52,21 @@
             // 
             // btnAllOrders
             // 
-            this.btnAllOrders.Location = new System.Drawing.Point(145, 73);
+            this.btnAllOrders.Location = new System.Drawing.Point(18, 65);
             this.btnAllOrders.Name = "btnAllOrders";
-            this.btnAllOrders.Size = new System.Drawing.Size(127, 34);
+            this.btnAllOrders.Size = new System.Drawing.Size(328, 20);
             this.btnAllOrders.TabIndex = 2;
             this.btnAllOrders.Text = "Ver todos";
             this.btnAllOrders.UseVisualStyleBackColor = true;
+            this.btnAllOrders.Visible = false;
             this.btnAllOrders.Click += new System.EventHandler(this.btnAllOrders_Click);
             // 
             // btnOrderRequest
             // 
-            this.btnOrderRequest.Location = new System.Drawing.Point(12, 73);
+            this.btnOrderRequest.Location = new System.Drawing.Point(186, 27);
             this.btnOrderRequest.Name = "btnOrderRequest";
-            this.btnOrderRequest.Size = new System.Drawing.Size(127, 34);
-            this.btnOrderRequest.TabIndex = 2;
+            this.btnOrderRequest.Size = new System.Drawing.Size(160, 21);
+            this.btnOrderRequest.TabIndex = 1;
             this.btnOrderRequest.Text = "Consultar";
             this.btnOrderRequest.UseVisualStyleBackColor = true;
             this.btnOrderRequest.Click += new System.EventHandler(this.btnOrderRequest_Click);
@@ -74,7 +75,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(283, 123);
+            this.ClientSize = new System.Drawing.Size(367, 102);
             this.Controls.Add(this.btnAllOrders);
             this.Controls.Add(this.btnOrderRequest);
             this.Controls.Add(this.label1);

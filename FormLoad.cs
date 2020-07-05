@@ -38,12 +38,15 @@ namespace proyecto
             {
                 var id = int.Parse(orderId.Text);
                 Program.getApp().addOrder(id, entryDate.Text, productType.Text, description.Text);
+                MessageBox.Show(string.Format("Orden cargada con éxito! \n\nOrden ID: {0}", id), "¡Enhorabuena!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 this.Visible = false;        
                 FormMain formMain = new FormMain();
                 formMain.Show();
-
-                //aca se podria devolver un confirm, ¿trycatch dentro de addOrder ?  o una comprobacion en los imputs.
+            }
+            else
+            {
+                MessageBox.Show("Por favor, complete todos los datos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 

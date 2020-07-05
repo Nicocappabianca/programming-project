@@ -4,6 +4,7 @@ using System.Windows.Forms;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Data.SqlClient;
+using System.Globalization;
 
 namespace proyecto
 {
@@ -36,11 +37,14 @@ namespace proyecto
             logged = false;
         }
          
-        public static string estado ()
+        public static string getUser ()
         {
+
+            TextInfo txt = new CultureInfo("en-US", false).TextInfo;
+
             if (logged)
-                return username;
-            return "";
+                return "Bienvenido " + txt.ToTitleCase(username); 
+            return null;
         }
     }
 }

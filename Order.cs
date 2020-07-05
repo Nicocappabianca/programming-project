@@ -23,11 +23,5 @@ namespace proyecto
             this.description = description;
             this.status = "Pendiente de aprobación";  
         }
-
-        public void updateOrder(string status, int id)
-        {
-            Order _order = Program.getApp().getOrderById(id);
-            _order.status = status; 
-        }
     }
 }

@@ -40,8 +40,8 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
-            this.status = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.status = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -52,7 +52,6 @@
             this.label1.Size = new System.Drawing.Size(54, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "ID Pedido";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // orderId
             // 
@@ -60,7 +59,7 @@
             this.orderId.Name = "orderId";
             this.orderId.ReadOnly = true;
             this.orderId.Size = new System.Drawing.Size(187, 20);
-            this.orderId.TabIndex = 1;
+            this.orderId.TabIndex = 6;
             // 
             // entryDate
             // 
@@ -127,8 +126,8 @@
             // 
             this.btnExit.Location = new System.Drawing.Point(73, 371);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(194, 40);
-            this.btnExit.TabIndex = 10;
+            this.btnExit.Size = new System.Drawing.Size(194, 24);
+            this.btnExit.TabIndex = 1;
             this.btnExit.Text = "Volver al inicio";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
@@ -137,29 +136,23 @@
             // 
             this.btnSave.Location = new System.Drawing.Point(33, 371);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(127, 40);
-            this.btnSave.TabIndex = 10;
+            this.btnSave.Size = new System.Drawing.Size(127, 24);
+            this.btnSave.TabIndex = 1;
             this.btnSave.Text = "Guardar cambios";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Visible = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnBack
             // 
             this.btnBack.Location = new System.Drawing.Point(183, 371);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(127, 40);
-            this.btnBack.TabIndex = 10;
-            this.btnBack.Text = "Volver al inicio";
+            this.btnBack.Size = new System.Drawing.Size(127, 24);
+            this.btnBack.TabIndex = 2;
+            this.btnBack.Text = "Volver";
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Visible = false;
-            // 
-            // status
-            // 
-            this.status.Location = new System.Drawing.Point(33, 323);
-            this.status.Name = "status";
-            this.status.ReadOnly = true;
-            this.status.Size = new System.Drawing.Size(187, 20);
-            this.status.TabIndex = 5;
+            this.btnBack.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // button1
             // 
@@ -170,18 +163,32 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Visible = false;
             // 
+            // status
+            // 
+            this.status.Enabled = false;
+            this.status.FormattingEnabled = true;
+            this.status.Items.AddRange(new object[] {
+            "Aprobado",
+            "Listo para entregar",
+            "Entregado",
+            "Cancelado"});
+            this.status.Location = new System.Drawing.Point(33, 319);
+            this.status.Name = "status";
+            this.status.Size = new System.Drawing.Size(187, 21);
+            this.status.TabIndex = 0;
+            // 
             // FormOrderResponse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(357, 433);
+            this.Controls.Add(this.status);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.description);
-            this.Controls.Add(this.status);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.productType);
             this.Controls.Add(this.label3);
@@ -213,7 +220,7 @@
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnBack;
-        private System.Windows.Forms.TextBox status;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox status;
     }
 }

@@ -41,9 +41,9 @@
             // 
             // btnSend
             // 
-            this.btnSend.Location = new System.Drawing.Point(54, 259);
+            this.btnSend.Location = new System.Drawing.Point(51, 258);
             this.btnSend.Name = "btnSend";
-            this.btnSend.Size = new System.Drawing.Size(217, 40);
+            this.btnSend.Size = new System.Drawing.Size(217, 25);
             this.btnSend.TabIndex = 21;
             this.btnSend.Text = "Enviar orden";
             this.btnSend.UseVisualStyleBackColor = true;
@@ -121,7 +121,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(323, 324);
+            this.ClientSize = new System.Drawing.Size(323, 304);
             this.Controls.Add(this.productType);
             this.Controls.Add(this.btnSend);
             this.Controls.Add(this.description);
