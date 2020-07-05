@@ -29,13 +29,14 @@
         private void InitializeComponent()
         {
             this.dataGrid = new System.Windows.Forms.DataGridView();
-            this.btnExit = new System.Windows.Forms.Button();
             this.orderId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.prodType = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.status = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.description = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.update = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.btnExcel = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGrid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,16 +55,6 @@
             this.dataGrid.Size = new System.Drawing.Size(776, 248);
             this.dataGrid.TabIndex = 0;
             this.dataGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGrid_CellContentClick);
-            // 
-            // btnExit
-            // 
-            this.btnExit.Location = new System.Drawing.Point(316, 266);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(177, 36);
-            this.btnExit.TabIndex = 1;
-            this.btnExit.Text = "Volver al inicio";
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // orderId
             // 
@@ -110,11 +101,32 @@
             this.update.Text = "Actualizar ";
             this.update.UseColumnTextForButtonValue = true;
             // 
+            // btnExit
+            // 
+            this.btnExit.Location = new System.Drawing.Point(397, 266);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(177, 36);
+            this.btnExit.TabIndex = 1;
+            this.btnExit.Text = "Volver al inicio";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // btnExcel
+            // 
+            this.btnExcel.Location = new System.Drawing.Point(200, 266);
+            this.btnExcel.Name = "btnExcel";
+            this.btnExcel.Size = new System.Drawing.Size(177, 36);
+            this.btnExcel.TabIndex = 2;
+            this.btnExcel.Text = "Exportar a Excel";
+            this.btnExcel.UseVisualStyleBackColor = true;
+            this.btnExcel.Click += new System.EventHandler(this.btnExcel_Click);
+            // 
             // FormOrdersTable
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 310);
+            this.Controls.Add(this.btnExcel);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.dataGrid);
             this.Name = "FormOrdersTable";
@@ -137,5 +149,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn status;
         private System.Windows.Forms.DataGridViewTextBoxColumn description;
         private System.Windows.Forms.DataGridViewButtonColumn update;
+        private System.Windows.Forms.Button btnExcel;
     }
 }
