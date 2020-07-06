@@ -34,7 +34,14 @@ namespace proyecto
                     FormOrderResponse formOrder = new FormOrderResponse(soughtOrder);
                     formOrder.Show();
                 }
+                else
+                {
+                    MessageBox.Show(string.Format("Parece que la orden que buscas no existe."), "¡Vaya!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    inputId.Text = "";
+                }
             }
+       
         }
 
         private void FormRequest_FormClosed(object sender, FormClosedEventArgs e)

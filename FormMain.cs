@@ -52,7 +52,7 @@ namespace proyecto
 
         private void FormMain_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (MessageBox.Show("Desea salir de la aplicacion?", "CoronaManagement 2020",
+            if (MessageBox.Show("Desea salir de la aplicacion?", "CoronApp",
                 MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.No)
             {
                 e.Cancel = true;

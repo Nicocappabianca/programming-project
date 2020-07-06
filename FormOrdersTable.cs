@@ -56,15 +56,15 @@ namespace proyecto
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            this.Visible = false; 
-            FormMain formMain = new FormMain();
-            formMain.Show();
+            this.Visible = false;
+            FormRequest formRequest = new FormRequest();
+            formRequest.Show();
         }
 
         private void FormOrdersTable_FormClosed(object sender, FormClosedEventArgs e)
-        {     
-            FormMain formMain = new FormMain();
-            formMain.Show();
+        {
+            FormRequest formRequest = new FormRequest();
+            formRequest.Show();
         }
 
         private void btnExcel_Click(object sender, EventArgs e)
@@ -102,7 +102,7 @@ namespace proyecto
                 
                 workbook.SaveAs(dir, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Microsoft.Office.Interop.Excel.XlSaveAsAccessMode.xlExclusive, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
                 
-                MessageBox.Show("Guardado correctamente" );
+                MessageBox.Show("¡Guardado correctamente!");
                 app.Quit();
             }
         }

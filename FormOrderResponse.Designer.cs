@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormOrderResponse));
             this.label1 = new System.Windows.Forms.Label();
             this.orderId = new System.Windows.Forms.TextBox();
             this.entryDate = new System.Windows.Forms.TextBox();
@@ -196,9 +197,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.orderId);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormOrderResponse";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormOrderResponse";
+            this.Text = "Estado del pedido";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormOrderResponse_FormClosed_1);
             this.Load += new System.EventHandler(this.FormOrderResponse_Load);
             this.ResumeLayout(false);

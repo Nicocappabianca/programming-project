@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormRequest));
             this.inputId = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnAllOrders = new System.Windows.Forms.Button();
@@ -80,9 +81,10 @@
             this.Controls.Add(this.btnOrderRequest);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.inputId);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormRequest";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormConsulta";
+            this.Text = "CoronApp";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormRequest_FormClosed);
             this.Load += new System.EventHandler(this.FormRequest_Load);
             this.ResumeLayout(false);

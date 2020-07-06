@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLoad));
             this.btnSend = new System.Windows.Forms.Button();
             this.description = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -131,9 +132,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.orderId);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormLoad";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormLoad";
+            this.Text = "Cargar orden";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormLoad_FormClosed);
             this.Load += new System.EventHandler(this.FormLoad_Load);
             this.ResumeLayout(false);

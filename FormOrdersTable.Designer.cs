@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormOrdersTable));
             this.dataGrid = new System.Windows.Forms.DataGridView();
             this.orderId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.date = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -107,7 +108,7 @@
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(177, 36);
             this.btnExit.TabIndex = 1;
-            this.btnExit.Text = "Volver al inicio";
+            this.btnExit.Text = "Volver a consultas";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
@@ -129,9 +130,10 @@
             this.Controls.Add(this.btnExcel);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.dataGrid);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormOrdersTable";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormOrdersTable";
+            this.Text = "Tabla de pedidos";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormOrdersTable_FormClosed);
             this.Load += new System.EventHandler(this.FormOrdersTable_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGrid)).EndInit();

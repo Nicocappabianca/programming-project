@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.btnLoad = new System.Windows.Forms.Button();
             this.btnRequest = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
@@ -96,8 +97,10 @@
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.btnRequest);
             this.Controls.Add(this.btnLoad);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "CoronApp";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormMain_FormClosing);
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.ResumeLayout(false);

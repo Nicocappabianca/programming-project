@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>appLogo.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -143,6 +146,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="appLogo.ico" />
     <Content Include="bin\Debug\proyecto.exe" />
     <Content Include="bin\Debug\proyecto.pdb" />
     <Content Include="obj\Debug\proyecto.csproj.FileListAbsolute.txt" />
