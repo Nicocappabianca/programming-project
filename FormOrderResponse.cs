@@ -54,6 +54,12 @@ namespace proyecto
 
         private void FormOrderResponse_Load(object sender, EventArgs e)
         {
+
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            MaximizeBox = false;
+            MinimizeBox = false;
+            StartPosition = FormStartPosition.CenterScreen;
+
             if (User.isLogged())
             {
                 btnBack.Visible = true;

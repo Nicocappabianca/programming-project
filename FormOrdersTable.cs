@@ -20,9 +20,12 @@ namespace proyecto
 
         private void FormOrdersTable_Load(object sender, EventArgs e)
         {
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.dataGrid.AllowUserToAddRows = false;
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            MaximizeBox = false;
+            MinimizeBox = false;
+            StartPosition = FormStartPosition.CenterScreen;
+
+            dataGrid.AllowUserToAddRows = false;
 
            
             foreach (Order _order in Program.getApp().ordersList)
@@ -116,7 +119,7 @@ namespace proyecto
                 
                 workbook.SaveAs(dir, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Microsoft.Office.Interop.Excel.XlSaveAsAccessMode.xlExclusive, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
                 
-                MessageBox.Show("¡Guardado correctamente!");
+                MessageBox.Show("¡Guardado correctamente!", "Guardar .xls");
                 app.Quit();
             }
         }

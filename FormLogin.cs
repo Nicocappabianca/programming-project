@@ -36,7 +36,11 @@ namespace proyecto
 
         private void FormLogin_Load(object sender, EventArgs e)
         {
-            this.AcceptButton = btnEnter; 
+            this.AcceptButton = btnEnter;
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            MaximizeBox = false;
+            MinimizeBox = false;
+            StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void FormLogin_FormClosed(object sender, FormClosedEventArgs e)

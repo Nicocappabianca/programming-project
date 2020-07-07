@@ -29,7 +29,13 @@ namespace proyecto
             {
                 productType.Items.Add(product);   
             }
-            productType.SelectedIndex = 0; 
+            productType.SelectedIndex = 0;
+
+
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            MaximizeBox = false;
+            MinimizeBox = false;
+            StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void btnSend_Click(object sender, EventArgs e)

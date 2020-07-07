@@ -24,7 +24,10 @@ namespace proyecto
 
         private void FormMain_Load(object sender, System.EventArgs e)
         {
-            FormBorderStyle = FormBorderStyle.FixedSingle;
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            MaximizeBox = false;
+            MinimizeBox = false;
+            StartPosition = FormStartPosition.CenterScreen;
             lblUser.Text = User.getUser();
         }
 

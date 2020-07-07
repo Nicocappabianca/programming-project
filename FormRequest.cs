@@ -52,6 +52,11 @@ namespace proyecto
 
         private void FormRequest_Load(object sender, EventArgs e)
         {
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            MaximizeBox = false;
+            MinimizeBox = false;
+            StartPosition = FormStartPosition.CenterScreen;
+
             if (User.isLogged())
                 btnAllOrders.Visible = true;
         }
