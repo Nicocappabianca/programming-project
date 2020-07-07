@@ -20,15 +20,16 @@ namespace proyecto
 
         private void FormOrdersTable_Load(object sender, EventArgs e)
         {
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.dataGrid.AllowUserToAddRows = false;
 
-            for (int i = 1; i <= Program.getApp().listCount(); i++)
+           
+            foreach (Order _order in Program.getApp().ordersList)
             {
-                Order orderTemp = Program.getApp().getOrderById(i);
+                string[] arr = new string[] { _order.id.ToString(), _order.date, _order.product, _order.status, _order.description };
 
-                string[] arr = new string[] { orderTemp.id.ToString(), orderTemp.date, orderTemp.product, orderTemp.status, orderTemp.description };
-
-                dataGrid.Rows.Add(arr);
+                 dataGrid.Rows.Add(arr);
             }
         }
 
@@ -51,6 +52,19 @@ namespace proyecto
                 this.Visible = false;
                 FormOrderResponse formOrder = new FormOrderResponse(_order);
                 formOrder.Show();
+            }
+
+            if (dataGrid.Columns[e.ColumnIndex].Name == "delete")
+            {
+                int id = Convert.ToInt32(dataGrid.Rows[dataGrid.CurrentRow.Index].Cells[0].Value);
+                if (MessageBox.Show ("¿Seguro desea eliminar la orden #" +  id + "?", "Atencion" , MessageBoxButtons.YesNo , MessageBoxIcon.Warning) == DialogResult.Yes)
+                {
+                    
+                    Order _order = Program.getApp().getOrderById(id);
+                    Program.getApp().ordersList.Remove(_order);
+
+                    dataGrid.Rows.RemoveAt(dataGrid.CurrentCell.RowIndex);
+                }
             }
         }
 

@@ -39,9 +39,8 @@ namespace proyecto
         {
             if (keyData == Keys.Escape)
             {
-                this.Visible = false;
-                FormRequest formReq = new FormRequest();
-                formReq.Show();
+                this.Close();
+               
             }
             return base.ProcessCmdKey(ref msg, keyData);
         }
