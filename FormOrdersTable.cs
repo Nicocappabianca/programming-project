@@ -105,13 +105,13 @@ namespace proyecto
                 app.Visible = false;
                 worksheet = workbook.ActiveSheet;
                 worksheet.Name = "Ordenes";
-                for (int i = 1; i < dataGrid.Columns.Count; i++)
+                for (int i = 1; i < dataGrid.Columns.Count -1; i++)
                 {
                     worksheet.Cells[1, i] = dataGrid.Columns[i - 1].HeaderText;
                 }
                 for (int i = 0; i < dataGrid.Rows.Count ; i++)
                 {
-                    for (int j = 0; j < dataGrid.Columns.Count -1; j++)
+                    for (int j = 0; j < dataGrid.Columns.Count -2; j++)
                     {
                         worksheet.Cells[i + 2, j + 1] = dataGrid.Rows[i].Cells[j].Value.ToString();
                     }
