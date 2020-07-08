@@ -37,8 +37,8 @@ namespace proyecto
                     inputId.Text = "";
                 }
             }
-       
         }
+
 
         private void FormRequest_FormClosed(object sender, FormClosedEventArgs e)
         {
@@ -82,11 +82,18 @@ namespace proyecto
                     e.Handled = true;
                 }
 
-                // only allow one decimal point
                 if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
                 {
                     e.Handled = true;
                 }
+        }
+
+        private void inputId_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnOrderRequest_Click(this, new EventArgs());
             }
+        }
     }
 }

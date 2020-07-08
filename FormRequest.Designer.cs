@@ -41,6 +41,7 @@
             this.inputId.Name = "inputId";
             this.inputId.Size = new System.Drawing.Size(162, 20);
             this.inputId.TabIndex = 0;
+            this.inputId.KeyDown += new System.Windows.Forms.KeyEventHandler(this.inputId_KeyDown);
             this.inputId.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.inputId_KeyPress);
             // 
             // label1
