@@ -19,11 +19,7 @@ namespace proyecto
 
         private void btnOrderRequest_Click(object sender, EventArgs e)
         {
-
-            int a = 0;
-            int.TryParse((inputId.Text),out a);
-      
-            if ((inputId.Text != "") && (a>0) )
+            if (inputId.Text != "")
             {
                 var id = int.Parse(inputId.Text); 
                 Order soughtOrder = Program.getApp().getOrderById(id);
@@ -77,5 +73,20 @@ namespace proyecto
             FormOrdersTable tabla = new FormOrdersTable();
             tabla.Show();
         }
+
+        private void inputId_KeyPress(object sender, KeyPressEventArgs e)
+        {
+                if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+                    (e.KeyChar != '.'))
+                {
+                    e.Handled = true;
+                }
+
+                // only allow one decimal point
+                if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+                {
+                    e.Handled = true;
+                }
+            }
     }
 }
